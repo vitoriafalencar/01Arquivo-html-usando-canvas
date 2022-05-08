@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01Arquivo canvas</title>
+<style>
+canvas{border:1px#000 solid;}
+</style>
+<script>
+    function desenha() {
+        var canvas =document.getElementById('teleDesenho');
+        var ctx =canvas.getContext('2d');
+        ctx.fillRect(25,25,100,100)
+        
+    }
+</script>
+</head>
+<body>
+    <canvas id="teleDesenho" width="200px" height="200px"></canvas>
+    <script> desenha();</script>
+    <em>O elemento canvas do html é usado para desenhar gráficos,em tempo de execução,em uma página web, através de scripts( geramente JavaScript)</em>
+</body>
+</html>
